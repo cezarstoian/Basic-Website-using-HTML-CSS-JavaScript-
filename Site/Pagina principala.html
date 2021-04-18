@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css.css">
+
+<head>
+<div class="header">
+	<h1> <font color="black"> Kriss Style Dekor </font> </h1>
+	<img src="logo.jpg" width="400" height="300" align="center">
+	<h2> <font color="black"> Mobilier la comanda </font> </h2>	
+</div>
+
+<ul>
+	<li><a class="active" href="Pagina principala.html"> <font color=#444>Despre noi </font> </a></li>
+	<li><a href="Pagina 1.html">Mobilier living</a></li> 	
+	<li><a href="Pagina 2.html">Mobilier bucatarie</a></li> 
+	<li><a href="Pagina 3.html">Mobilier dormitor</a></li> 
+	<li><a href="Pagina 4.html">Mobilier hol</a></li>
+	<li><a href="Pagina 5.html">Formular comanda</a></li>
+</ul>
+</head>
+
+<body>
+
+<button class="open-button" onclick="openForm()">Login</button>
+
+<div class="form-popup" id="formular">
+  <form class="form-container">
+    <h1>Login</h1>
+
+    <label for="email">Email</label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="pswd">Password</label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("formular").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("formular").style.display = "none";
+}
+</script>
+
+<body bgcolor="white">
+<hr size="10" color="black">
+<br> <br> <br>
+<div class="titlu"> <font color="black"> Cine suntem? </font> </div>
+<br> <br> 
+
+<div class="paragraf">Suntem o societate cu o echipa de profesionisti tineri, dinamici, care plaseaza in centrul atentiei clientul, cu necesitatile si dorintele sale.</div>
+<div class="paragraf">Obiectul nostru de activitate este confectionarea, productia oricarui tip de mobilier din PAL melaminat si MDF melaminat, infoliat sau vopsit.</div>
+<div class="paragraf">Realizam mobila la comanda conform specificatiilor clientilor, venind cu idei si propuneri in privinta designului si a compartimentarilor pentru a obtine un mobilier modern cu functionalitate deplina.
+
+<br> <br>
+<font color="CC5500">
+Produse de calitate superioara <br>
+12 ani de experienta <br>
+Transport si montaj gratuit <br>
+Proiectare 3D <br>
+Asistenta in alegerea stilului potrivit <br>
+Mobila la comanda, stasuri si serie <br>
+</font>
+</div>
+<br> <br> <br> <br> <br>
+
+<div class="slideContainer">
+	<span id="slider-image-1"></span>
+	<span id="slider-image-2"></span>
+	<span id="slider-image-3"></span>
+	<span id="slider-image-4"></span>
+	<div class="imageContainer">
+		<img src="mobila-living.jpg" class="sliderImage" width="600" height="400">
+		<img src="mobila-bucatarie.jpg" class="sliderImage" width="600" height="400">
+		<img src="mobila-dormitor.jpg" class="sliderImage" width="600" height="400">
+		<img src="mobila-baie.jpg" class="sliderImage" width="600" height="400">
+	</div>
+	<div class="containerButon">
+		<a href="#slider-image-1" class="buton"> </a>
+		<a href="#slider-image-2" class="buton"> </a>
+		<a href="#slider-image-3" class="buton"> </a>
+		<a href="#slider-image-4" class="buton"> </a>
+	</div>
+</div>
+
+</body>
+</html>

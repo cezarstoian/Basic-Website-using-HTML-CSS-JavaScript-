@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css.css">
+
+<head>
+
+<title> Mobilier Baie </title>
+<div class="header">
+	<h1> <font color="black"> Kriss Style Dekor </font> </h1>
+	<img src="logo.jpg" width="400" height="300" align="center">
+	<h2> <font color="black"> Mobilier la comanda </font> </h2>	
+</div>
+
+<ul>
+	<li><a href="Pagina principala.html">Despre noi</a></li>
+	<li><a href="Pagina 1.html">Mobilier living</a></li> 	
+	<li><a href="Pagina 2.html">Mobilier bucatarie</a></li> 
+	<li><a href="Pagina 3.html">Mobilier dormitor</a></li> 
+	<li><a class="active" href="Pagina 4.html"> <font color=#444> Mobilier hol </font> </a></li>
+	<li><a href="Pagina 5.html">Formular comanda</a></li>
+</ul>
+
+</head>
+
+<body>
+
+<hr size="10" color="black">
+<div class="paragraf">
+<p>
+Fiind o zona de trecere, e necesar sa avem mobilier hol practic si functional. Clasic sau modern, compact sau extravagant, la Kriss Style Dekor, veti gasi cu siguranta mobilier potrivit pentru holul dumneavoastra.
+</p>
+<p>
+Mobilierul, alcatuit din cuier, pantofar, comoda si dulap hol, impreuna cu diverse elemente decorative, vor crea un ambient inedit in casa dumneavoastra! 
+</p>
+<body bgcolor="white">
+</div>
+<hr size="10" color="black">
+<button class="open-button" onclick="openForm()">Login</button>
+
+<div class="form-popup" id="formular">
+  <form class="form-container">
+    <h1>Login</h1>
+
+    <label for="email">Email</label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="pswd">Password</label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("formular").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("formular").style.display = "none";
+}
+</script>
+
+<div class="box">
+	<table border="1" style="width: 312%" cellspacing="10" cellpadding="30" bgcolor="CC5500" color="black">
+		<tr>
+		<td align="center"><img src="mobilahol1.jpg" width="420" height="400"></td>
+		<td align="center"><img src="mobilahol2.jpg" width="420" height="400"></td>
+		<td align="center"><img src="mobilahol3.jpg" width="420" height="400"></td>
+		</tr>
+		<tr>
+		<td align="center"><img src="mobilahol4.jpg" width="420" height="400"></td>
+		<td align="center"><img src="mobilahol5.jpg" width="420" height="400"></td>
+		<td align="center"><img src="mobilahol6.jpg" width="420" height="400"></td>
+		</tr>
+	</table>
+</div>
+
+</body>
+</html>

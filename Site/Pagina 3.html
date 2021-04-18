@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css.css">
+
+<head>
+
+<title> Mobilier Dormitor </title>
+<div class="header">
+	<h1> <font color="black"> Kriss Style Dekor </font> </h1>
+	<img src="logo.jpg" width="400" height="300" align="center">
+	<h2> <font color="black"> Mobilier la comanda </font> </h2>	
+</div>
+
+<ul>
+	<li><a href="Pagina principala.html">Despre noi</a></li>
+	<li><a href="Pagina 1.html">Mobilier living</a></li> 	
+	<li><a href="Pagina 2.html">Mobilier bucatarie</a></li> 
+	<li><a class="active" href="Pagina 3.html"> <font color=#444> Mobilier dormitor </font> </a></li> 
+	<li><a href="Pagina 4.html">Mobilier hol</a></li>
+	<li><a href="Pagina 5.html">Formular comanda</a></li>
+</ul>
+
+</head>
+
+<body>
+
+<body bgcolor="white">
+<hr size="10" color="black">
+
+<div class="paragraf">
+<p>
+Fiind camera unde ne odihnim dupa o zi lunga si obositoare, mobila trebuie sa fie primitoare si calduroasa, pentru a va oferi confortul bine meritat.
+</p>
+<p>
+Functionalitatea si designul mobilei sunt primele caracteristici de care trebuie sa tinem cont – mobilierul trebuie integrat cu usurinta in spatiul destinat, fara sa aglomereze.
+</p>
+<p>
+Cand in componenta dormitorului avem pat matrimonial, daca spatiul nu este de partea dumneavoastra, usile culisante pentru dressing sunt alegerea potrivita.
+</p>
+<p>
+Nu uitati faptul ca mobila trebuie armonizata, si creata special si diferit in functie de fiecare in parte.
+</p>
+<p>
+Alaturi de Kriss Style Dekor, dormitorul viselor dumneavoastra, va deveni realitate.  
+</p>
+</div>
+<body bgcolor="white">
+<hr size="10" color="black">
+
+<button class="open-button" onclick="openForm()">Login</button>
+
+<div class="form-popup" id="formular">
+  <form class="form-container">
+    <h1>Login</h1>
+
+    <label for="email">Email</label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="pswd">Password</label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("formular").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("formular").style.display = "none";
+}
+</script>
+
+<div class="box">
+	<table border="1" style="width: 312%" cellspacing="10" cellpadding="30" bgcolor="CC5500" color="black">
+		<tr>
+		<td align="center"><img src="mobiladormitor1.jpg" width="420" height="400"> <p align="center">Dormitor Breeze</td>
+		<td align="center"><img src="mobiladormitor2.jpg" width="420" height="400"> <p align="center">Dormitor Larry</td>
+		<td align="center"><img src="mobiladormitor3.jpg" width="420" height="400"> <p align="center">Dormitor Melody</td>
+		</tr>
+		<tr>
+		<td align="center"><img src="mobiladormitor4.jpg" width="420" height="400"> <p align="center">Dormitor Saigon</td>
+		<td align="center"><img src="mobiladormitor5.jpg" width="420" height="400"> <p align="center">Dormitor Madison</td>
+		<td align="center"><img src="mobiladormitor6.jpg" width="420" height="400"> <p align="center">Dormitor Domino</td>
+		</tr>
+	</table>
+</div>
+
+</body>
+</html>

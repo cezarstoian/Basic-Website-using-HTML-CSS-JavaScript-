@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css.css">
+
+<title>Comanda Acum!</title>
+<div class="header">
+	<h1> <font color="black"> Kriss Style Dekor </font> </h1>
+	<img src="logo.jpg" width="400" height="300" align="center">
+	<h2> <font color="black"> Mobilier la comanda </font> </h2>	
+</div>
+
+<ul>
+	<li><a href="Pagina principala.html">Despre noi </font> </a></li>
+	<li><a href="Pagina 1.html">Mobilier living</a></li> 	
+	<li><a href="Pagina 2.html">Mobilier bucatarie</a></li> 
+	<li><a href="Pagina 3.html">Mobilier dormitor</a></li> 
+	<li><a href="Pagina 4.html">Mobilier hol</a></li>
+	<li><a class="active" href="Pagina 5.html"> <font color=#444>Formular comanda</font> </a></li>
+</ul>
+
+</head>
+
+<body>
+
+<button class="open-button" onclick="openForm()">Login</button>
+
+<div class="form-popup" id="formular">
+  <form class="form-container">
+    <h1>Login</h1>
+
+    <label for="email">Email</label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="pswd">Password</label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("formular").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("formular").style.display = "none";
+}
+</script>
+
+<body bgcolor="white">
+<hr size="10" color="black">
+<br> <br> <br>
+<div class="title"><p align="center"><font size="7">Formular comanda</font></p></div>
+<form>
+<table align="left">
+<tr><td colspan="2"><hr></td></tr>
+<tr>
+<td><font size="5">Numele:</font></td>
+<td><input type="text" name="nume" size="40"></td>
+</tr>
+<tr>
+<td><font size="5">Prenumele:</font></td>
+<td><input type="text" name="prenume" size="40"></td>
+</tr>
+<img src="desprenoi1.jpg" align="right" width="550" height="400">
+<img src="desprenoi2.jpg" align="left" width="630" height="400">
+<tr>
+<td><font size="5">Adresa de email:</font></td>
+<td><input type="text" name="adresa de email" size="40"></td>
+</tr>
+<tr>
+<td><font size="5">Numar de telefon:</font></td>
+<td><input type="text" name="numar de telefon" size="40"></td>
+</tr>
+<tr><td colspan="2"><hr></td></tr>
+<tr>
+<td><font size="5">Magazin:</font></td>
+<td>
+<select>
+<option value=" " selected></option>
+<option value="tamilia">Tamilia</option>
+<option value="obor">Obor</option>
+</select>
+</td>
+</tr>
+
+<tr><td colspan="2"><hr></td></tr>
+<tr>
+<td>
+<input type="radio" name="ridicare din magazin" value="RM"><font size="5">Ridicare din magazin</font><br>
+<input type="radio" name="transport si montaj" value="TM"><font size="5">Transport si montaj (50 RON)</font><br>
+</td>
+</tr>
+<tr><td colspan="2"><hr></td></tr>
+<tr>
+<td><input type="button" value="Trimite"></td>
+<td><input type="reset" value="Reseteaza"></td>
+</tr>
+<tr>
+<td><input type="button" value="Atasati schita"></td>
+</tr>
+</table>
+</form>
+</body>
+</html>

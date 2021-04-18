@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css.css">
+
+<head>
+
+<title> Mobilier Living </title>
+<div class="header">
+	<h1> <font color="black"> Kriss Style Dekor </font> </h1>
+	<img src="logo.jpg" width="400" height="300" align="center">
+	<h2> <font color="black"> Mobilier la comanda </font> </h2>	
+</div>
+
+<ul>
+	<li><a href="Pagina principala.html">Despre noi</a></li>
+	<li><a class="active" href="Pagina 1.html"> <font color=#444> Mobilier living </font> </a></li> 	
+	<li><a href="Pagina 2.html">Mobilier bucatarie</a></li> 
+	<li><a href="Pagina 3.html">Mobilier dormitor</a></li> 
+	<li><a href="Pagina 4.html">Mobilier hol</a></li>
+	<li><a href="Pagina 5.html">Formular comanda</a></li>
+</ul>
+
+</head>
+
+<body>
+
+<body bgcolor="white">
+<hr size="10" color="black">
+<div class="paragraf">
+<p>
+Spatiu de relaxare, sau camera de oaspeti, mobila trebuie integrata intr-un mod ingenios astfel incat sa fie primitoare, si atragatoare, eleganta si practica in acelasi timp.
+</p>
+<p>
+Avand in vedere faptul ca mobila este de lunga de durata, se recomanda un design unic si o compartimentare realizata special pentru nevoile dumneavoastra.
+</p>
+<p>
+Obisnuiti sa va pierdeti in carti, aveti o colectie impresionanta? In acest caz, mobila trebuie creata avand ca si punct central un spatiul destinat depozitarii cartilor.
+</p>
+<p>
+Daca sunteti un cinefil inrait, atunci piesa centrala a mobilei va fi constituita de TV. In acest caz, designul va trebui creat in jurul comodei TV.
+</p>
+<p>
+Va invitam sa parcurgeti galeria noastra de mobila living, iar in conditia in care doriti sa materializati o idee proprie, specialistii Kriss Style Dekor va stau la dispozitie pentru a transforma in reallitate, mobilierul visat de dumneavoastra.
+</p>
+</div>
+<button class="open-button" onclick="openForm()">Login</button>
+
+<div class="form-popup" id="formular">
+  <form class="form-container">
+    <h1>Login</h1>
+
+    <label for="email">Email</label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="pswd">Password</label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("formular").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("formular").style.display = "none";
+}
+</script>
+
+<body bgcolor="white">
+<hr size="10" color="black">
+
+<div class="box">
+	<table border="1" style="width: 312%" cellspacing="10" cellpadding="30" bgcolor="CC5500" color="black">
+		<tr>
+		<td align="center"><img src="mobilaliving1.jpg" width="420" height="400"> <p align="center">Living Torino</td>
+		<td align="center"><img src="mobilaliving2.jpg" width="420" height="400"> <p align="center">Living Amadeus</td>
+		<td align="center"><img src="mobilaliving3.jpg" width="420" height="400"> <p align="center">Living Marry</td>
+		</tr>
+		<tr>
+		<td align="center"><img src="mobilaliving4.jpg" width="420" height="400"> <p align="center">Living Laguna</td>
+		<td align="center"><img src="mobilaliving5.jpg" width="420" height="400"> <p align="center">Living Chicago</td>
+		<td align="center"><img src="mobilaliving6.jpg" width="420" height="400"> <p align="center">Living Roma</td>
+		</tr>
+	</table>
+</div>
+
+</body>
+</html>

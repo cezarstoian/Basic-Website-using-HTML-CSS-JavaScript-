@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css.css">
+
+<head>
+
+<title> Mobilier Bucatarie </title>
+<div class="header">
+	<h1> <font color="black"> Kriss Style Dekor </font> </h1>
+	<img src="logo.jpg" width="400" height="300" align="center">
+	<h2> <font color="black"> Mobilier la comanda </font> </h2>	
+</div>
+
+<ul>
+	<li><a href="Pagina principala.html">Despre noi</a></li>
+	<li><a href="Pagina 1.html">Mobilier living</a></li> 	
+	<li><a class="active" href="Pagina 2.html"> <font color=#444> Mobilier bucatarie </font> </a></li> 
+	<li><a href="Pagina 3.html">Mobilier dormitor</a></li> 
+	<li><a href="Pagina 4.html">Mobilier hol</a></li>
+	<li><a href="Pagina 5.html">Formular comanda</a></li>
+</ul>
+
+</head>
+
+<body>
+
+<body bgcolor="white">
+<hr size="10" color="black">
+
+<div class="paragraf">
+<p>
+La Kriss Style Dekor se folosesc materiale de calitate superioara pentru fabricarea mobilei de bucatarie.
+</p>
+<p>
+Materiale si accesorii Blum, Hafele, FGV, Egger, Kronospan.
+</p>
+<p>
+In galeria noastra de produse, veti gasi cu siguranta mobilierul pe care l-ati visat si l-ati dorit intotdeauna. Mobila bucatarie moderna, contemporana, pentru ca timpul pe care dumneavoastra il petreceti gatind, sa fie cat mai placut.
+</p>
+<p>
+Compartimentarea ingenioasa a mobilierului pentru bucatarie, va simplifica munca, efortul depus fiind redus semnificativ, deoarece veti avea totul la indemana.
+</p>
+<p>
+Pe langa practicalitatea pe care o are mobila bucatarie moderna, aceasta va incanta privirea de fiecare data, datorita designului sau inedit, unic si elegant.
+</p>
+<p>
+Daca nu va puteti hotari deja existenta, specialistii nostri va stau la dispozitie, pentru a crea impreuna cu ei, o mobila bucatarie moderna la comanda, special creata pentru nevoile si gusturile dumneavoastra. 
+</p>
+</div>
+<hr size="10" color="black">
+
+<button class="open-button" onclick="openForm()">Login</button>
+
+<div class="form-popup" id="formular">
+  <form class="form-container">
+    <h1>Login</h1>
+
+    <label for="email">Email</label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="pswd">Password</label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("formular").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("formular").style.display = "none";
+}
+</script>
+
+<div class="box">
+	<table border="1" style="width: 312%" cellspacing="10" cellpadding="30" bgcolor="CC5500" color="black">
+		<tr>
+		<td align="center"><img src="mobilabucatarie1.jpg" width="420" height="400"> <p align="center">Bucatarie Holly</td>
+		<td align="center"><img src="mobilabucatarie2.jpg" width="420" height="400"> <p align="center">Bucatarie Cecile</td>
+		<td align="center"><img src="mobilabucatarie3.jpg" width="420" height="400"> <p align="center">Bucatarie Venetia</td>
+		</tr>
+		<tr>
+		<td align="center"><img src="mobilabucatarie4.jpg" width="420" height="400"> <p align="center">Bucatarie Linda</td>
+		<td align="center"><img src="mobilabucatarie5.jpg" width="420" height="400"> <p align="center">Bucatarie Becky</td>
+		<td align="center"><img src="mobilabucatarie6.jpg" width="420" height="400"> <p align="center">Bucatarie Donna</td>
+		</tr>
+	</table>
+</div>
+
+</body>
+</html>
